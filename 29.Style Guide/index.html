@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 </head>
+
 <body>
-	
+	<!-- 
+	A consistent, clean, and tidy HTML code makes it easier for others to read and understand your code.
+
+	Here are some guidelines and tips for creating good HTML code.
+
+	Always Declare Document Type
+	Always declare the document type as the first line in your document.
+
+	The correct document type for HTML is:
+	<!DOCTYPE html>
+	-->
+
+	<!-- 
+	Use Lowercase Element Names
+	HTML allows mixing uppercase and lowercase letters in element names.
+
+	However, we recommend using lowercase element names, because:
+
+	1.Mixing uppercase and lowercase names looks bad
+	2.Developers normally use lowercase names
+	3.Lowercase looks cleaner
+	4.Lowercase is easier to write
+	-->
+
+	<!-- 
+	Close All HTML Elements
+  In HTML, you do not have to close all elements (for example the <p> element).
+
+  However, we strongly recommend closing all HTML elements, like this:
+	-->
+	<section>
+		<p>This is a paragraph.</p>
+		<p>This is a paragraph.</p>
+	</section>
+	<!-- Bad . Don't use this code-->
+	<section>
+		<p>This is a paragraph.
+		<p>This is a paragraph.
+	</section>
+	<!-- 
+	Use Lowercase Attribute Names
+	HTML allows mixing uppercase and lowercase letters in attribute names.
+
+	However, we recommend using lowercase attribute names, because:
+
+	1.Mixing uppercase and lowercase names looks bad
+	2.Developers normally use lowercase names
+	3.Lowercase looks cleaner
+	4.Lowercase is easier to write
+	-->
+	<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+	<!-- Bad . Don't use this code-->
+	<a HREF="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+	<!-- 
+	Always Quote Attribute Values
+	HTML allows attribute values without quotes.
+
+	However, we recommend quoting attribute values, because:
+
+	1.Developers normally quote attribute values
+	2.Quoted values are easier to read
+	3.You MUST use quotes if the value contains spaces
+	-->
+	<table class="striped"></table>
+	<!-- Bad . Don't use this code-->
+	<table class=striped></table>
+	<!--Very Bad . This will not work, because the value contains spaces-->
+	<table class=table striped>
 </body>
+
 </html>
