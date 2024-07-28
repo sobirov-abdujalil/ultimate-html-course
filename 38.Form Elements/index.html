@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Form elements</title>
 </head>
+
 <body>
-	
+	<!-- 
+		The HTML <form> Elements
+		The HTML <form> element can contain one or more of the following form elements:
+
+		<input>
+		<label>
+		<select>
+		<textarea>
+		<button>
+		<fieldset>
+		<legend>
+		<datalist>
+		<output>
+		<option>
+		<optgroup>
+	-->
+	<form action="/action_page.php">
+		<label for="cars">Choose a car:</label>
+		<select id="cars" name="cars">
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat">Fiat</option>
+			<option value="audi">Audi</option>
+		</select><br><br>
+		<textarea name="message" rows="10" cols="30">
+
+		</textarea><br><br>
+
+		<fieldset>
+			<legend>FirstName:</legend>
+			<input type="text" id="fname" name="fname">
+		</fieldset>
+
+		<fieldset>
+			<legend>LastName:</legend>
+			<input type="text" id="fname" name="fname">
+		</fieldset><br>
+		<input type="submit"><br><br>
+
+		<button type="button" onclick="alert('Hello World!')">Click Me!</button><br><br>
+		<!-- 
+			The <datalist> Element
+			The <datalist> element specifies a list of pre-defined options for an <input> element.
+
+			Users will see a drop-down list of the pre-defined options as they input data.
+
+			The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.
+	  -->
+		<input list="browsers">
+		<datalist id="browsers">
+			<option value="Edge"></option>
+			<option value="Chrome"></option>
+			<option value="Firefox"></option>
+			<option value="Safari"></option>
+		</datalist>
+
+	</form>
+	<!-- 
+		The <output> Element
+		The <output> element represents the result of a calculation (like one performed by a script
+	-->
+	<form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+		0
+		<input type="range" id="a" name="a" value="50">
+		100 +
+		<input type="number" id="b" name="b" value="50">
+		=
+		<output name="x" for="a b"></output>
+		<br><br>
+		<input type="submit">
+	</form>
+
 </body>
+
 </html>
