@@ -3,9 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Input form attributes</title>
 </head>
 <body>
-	
+	<!-- 
+		The novalidate Attribute
+		The novalidate attribute is a <form> attribute.
+
+		When present, novalidate specifies that all of the form-data should not be validated when submitted.
+	-->
+		<form action="/action_page.php" novalidate>
+			<label for="email"></label>
+			<input type="email" id="email" name="email"> <br><br>
+			<input type="submit" value="Submit">
+		</form>
 </body>
 </html>
